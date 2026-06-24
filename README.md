@@ -83,5 +83,11 @@ npm start
 
 MIT
 
-Created by ForgeWorks Studio.
+---
+
+Created by **ForgeWorks Studio**
+**Simon Radcliffe**
+
 [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-Support-yellow?style=for-the-badge)](https://buymeacoffee.com/sradcliffe)
+
+Support helps fund future ForgeWorks Studio tools, ComfyUI workflow utilities, Blender addons, and creative technology projects.
