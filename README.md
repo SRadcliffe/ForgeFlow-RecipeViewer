@@ -2,6 +2,8 @@
 
 ForgeFlow Recipe Viewer is a lightweight Electron desktop application for viewing and inspecting ForgeFlow Image and Video Recipe JSON files.
 
+![ForgeFlow Recipe Viewer](assets/screenshots/forgeflow-recipe-viewer.png)
+
 ## Features
 
 * Drag and drop recipe loading
@@ -9,11 +11,12 @@ ForgeFlow Recipe Viewer is a lightweight Electron desktop application for viewin
 * Video recipe support
 * Positive prompt viewing
 * Negative prompt viewing
-* Prompt copy functionality
-* ForgeFlow branded interface
+* Prompt tab switching
+* Copy prompt functionality
 * Recipe metadata inspection
+* ForgeFlow branded interface
 
-## Supported Fields
+## Supported Recipe Data
 
 * File Name
 * Seed
@@ -23,15 +26,28 @@ ForgeFlow Recipe Viewer is a lightweight Electron desktop application for viewin
 * Scheduler
 * Denoise
 * Model
-* Clip
+* CLIP
 * VAE
-* Additional recipe metadata
+* Additional custom recipe metadata
 
 ## Installation
 
 ```bash
 npm install
 npm start
+```
+
+## Project Structure
+
+```text
+ForgeFlow-RecipeViewer/
+├── assets/
+├── index.html
+├── styles.css
+├── renderer.js
+├── main.js
+├── package.json
+└── README.md
 ```
 
 ## Built With
@@ -41,9 +57,12 @@ npm start
 * CSS
 * JavaScript
 
-## Screenshots
+## Roadmap
 
-(Add screenshots here)
+* Recipe comparison tools
+* Recipe library support
+* Additional recipe metadata support
+* Future ForgeFlow ecosystem integration
 
 ## License
 
