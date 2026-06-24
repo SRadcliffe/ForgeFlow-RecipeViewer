@@ -3,18 +3,13 @@
 const { app, BrowserWindow } = require('electron');
 const path = require('path');
 
-// Handle creating/removing shortcuts on Windows when installing/uninstalling.
-if (require('electron-squirrel-startup')) {
-  app.quit();
-}
-
 // Create the browser window.
 const createWindow = () => {
   const mainWindow = new BrowserWindow({
     width: 1200,
     height: 800,
     autoHideMenuBar: true,
-	icon: path.join(__dirname, "assets", "favicon.ico"),
+	icon: path.join(__dirname, "assets", "icon.png"),
     webPreferences: {
       nodeIntegration: true,
       contextIsolation: false

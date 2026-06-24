@@ -1,22 +1,46 @@
 {
   "name": "forgeflow-recipeviewer",
-  "version": "0.1.0",
-  "description": "Desktop recipe viewer for Forge Save JSON files",
+  "version": "1.0.0",
+  "description": "ForgeFlow Recipe Viewer for ComfyUI recipe exports",
   "main": "main.js",
-  "scripts": {
-    "start": "electron ."
-  },
-  "keywords": [
-    "forgeflow",
-    "forge-save",
-    "comfyui",
-    "recipe-viewer"
-  ],
   "author": "Simon Radcliffe",
   "license": "MIT",
   "type": "commonjs",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "com.forgeworks.forgeflow.recipeviewer",
+    "productName": "ForgeFlow Recipe Viewer",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "assets/**/*",
+      "index.html",
+      "styles.css",
+      "renderer.js",
+      "main.js",
+      "package.json"
+    ],
+    "win": {
+      "icon": "assets/icon.png",
+      "target": [
+        "portable",
+        "nsis"
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    }
+  },
   "devDependencies": {
     "electron": "^42.4.1",
-    "electron-squirrel-startup": "^1.0.1"
+    "electron-builder": "^26.0.12",
+    "png-to-ico": "^2.1.8"
   }
 }
