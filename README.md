@@ -2,7 +2,7 @@
 
 ForgeFlow Recipe Viewer is a lightweight Electron desktop application for viewing and inspecting ForgeFlow Image and Video Recipe JSON files.
 
-![ForgeFlow Recipe Viewer](assets/screenshots/forgeflow-recipe-viewer.png)
+![ForgeFlow Recipe Viewer](assets/forgeflow-recipe-viewer.png)
 
 ## Features
 
