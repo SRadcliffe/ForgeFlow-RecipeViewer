@@ -1,0 +1,22 @@
+{
+  "name": "forgeflow-recipeviewer",
+  "version": "0.1.0",
+  "description": "Desktop recipe viewer for Forge Save JSON files",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [
+    "forgeflow",
+    "forge-save",
+    "comfyui",
+    "recipe-viewer"
+  ],
+  "author": "Simon Radcliffe",
+  "license": "MIT",
+  "type": "commonjs",
+  "devDependencies": {
+    "electron": "^42.4.1",
+    "electron-squirrel-startup": "^1.0.1"
+  }
+}

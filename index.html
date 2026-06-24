@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ForgeFlow – Recipe Viewer</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <main class="recipe-viewer">
+        <header class="app-header">
+            <img src="./assets/forgeflow-logo.png" alt="ForgeFlow" class="app-logo" />
+        </header>
+
+        <section class="container">
+            <section class="left-column">
+                <section class="json-card">
+                    <h2>Open Recipe</h2>
+
+                    <div id="dropZone" class="drop-zone">
+                        <div class="drop-icon"><span></span></div>
+                        <h2>Drop JSON file here</h2>
+                        <p>or click to browse</p>
+                    </div>
+
+                    <input id="fileInput" type="file" accept=".json" hidden />
+                </section>
+
+                <section id="promptPanel" class="json-card hidden">
+                    <div class="section-head">
+                        <h2>Prompt</h2>
+                        <button id="copyPromptBtn" class="btn">Copy Prompt</button>
+                    </div>
+
+                    <div class="prompt-tabs">
+                        <button id="positivePromptTab" class="prompt-tab active" type="button">
+                            Positive
+                        </button>
+                        <button id="negativePromptTab" class="prompt-tab" type="button">
+                            Negative
+                        </button>
+                    </div>
+
+                    <textarea id="promptText" readonly></textarea>
+                </section>
+            </section>
+
+            <section id="recipeSection" class="recipe-panel hidden">
+                <h2 id="recipeTitle">Image Recipe</h2>
+                <div id="recipeFields" class="recipe-fields"></div>
+            </section>
+        </section>
+    </main>
+
+    <script src="renderer.js"></script>
+</body>
+</html>
